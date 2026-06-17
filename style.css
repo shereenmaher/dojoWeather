@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*navbar styling*/
+.navbar{
+    background-color: #9fc5f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 80px;
+    padding: 0px 350px;
+}
+/*h1 styling*/
+.navbar h1{
+    font-size: 48px;
+}
+/*ul styling*/
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    font-size: 28px;
+}/*end of nav bar styling*/
+.city-list{
+    padding: 0px 357px 0px 0px;
+}
+/*big container styling*/
+.big-container{
+    height: 600px;
+    width: 860px;
+    display: flex;
+    flex-direction: column ;
+    margin: 0px 350px;
+}
+/*container one styling (San Jose & Tempreture select*/
+.container-one{
+    display: flex;
+    flex: 0.4;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+#temperature{
+    text-decoration: none;
+    border: none;
+}
+.temp{
+    display: flex;
+}
+.label-temp{
+    margin-right: 10px;
+}
+.select-container{
+    border: 1px solid black;
+    
+}
+.selct{
+    border: 1px solid black;
+}
+.container-two{
+    display: flex;
+    flex: 3.6;
+    justify-content: space-between;
+    gap : 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;     
+}
+.weather{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color:#eeeeee ;
+    border: 1px solid black;
+    justify-content: space-around;
+   
+}
+.weather-img {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    margin-left: 22px;
+}
+h3{
+    font-size: 36px;
+    text-align: center;
+}
+.temp-cards{
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+h5{
+    font-size: 24px;
+    text-align: center;
+}
+.theme-red{
+    color: rgb(207 43 40);
+    font-weight: 900;
+}
+.theme-blue{
+    color: rgb(47 122 228);
+    font-weight: 900;
+}
+.container-three{
+    display: flex;
+    flex: 1;
+    border: 4px solid black;
+}
+.container-three{
+    display: flex;
+    
+}
+.cookie{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.img-cookie{
+    padding-left: 20px;
+}
+.cookie-pargraphs{
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -50px;
+}
+.cookie-head{
+    font-size: 26px;
+    text-align: left;
+}
+.cookie-p{
+    font-size: 22px;
+    
+}
+.button-accept{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 2px 8px;
+    background-color: #9fc5f8;
+    border: 3px solid black;
+    box-shadow: 2px 2px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!--nav bar start-->
+    <div class="navbar">
+        <h1>DojoWeather</h1>
+        <!--start of list-->
+        <ul class="city-list">
+            <li onclick="alertMsg('Loading Weather Report')">Burbank</li>
+            <li onclick="alertMsg('Loading Weather Report')">Chicago</li>
+            <li onclick="alertMsg('Loading Weather Report')">Dallas</li>
+        </ul>
+    </div> <!--end of navbar-->
+
+    <!--big container start-->
+    <div class="big-container">
+        <!--start of container one-->
+        <div class="container-one">
+           <h2>San Jose</h2>
+           <div class="temp"><!--start of temperature div (label and select) -->
+                <label class="label-temp" for="temperature">show temperature in </label>
+                <div class="select-container"> <!--start of select-->
+                    <select onclick="celTOFeh(this)" name="temperature" id="temperature">
+                        <option value="c">°C</option>
+                        <option value="f">°F</option>
+                    </select>
+                </div> <!--end of select-->
+           </div> <!--end of temperature div-->
+        </div> <!--end of container one-->
+        <!--start of container two-->
+        <div class="container-two">
+            <div class="weather">
+                <h3>Today</h3>
+                <img class="weather-img" src="./assets/some_rain.png">
+                <h5>some rain</h5>
+                <div class="temp-cards">
+                    <h6 class="theme-red"><span class="degree">24</span>°</h6>
+                    <h6 class="theme-blue" ><span class="degree">18</span>°</h6>
+                </div>
+            </div>
+            <div class="weather">
+                <h3>Tomorrow</h3>
+                <img class="weather-img" src="./assets/some_sun.png">
+                <h5>some sun</h5>
+                <div class="temp-cards">
+                    <h6 class="theme-red"><span class="degree">27</span>°</h6>
+                    <h6 class="theme-blue"><span class="degree">19</span>°</h6>
+                </div>
+            </div>
+            <div class="weather">
+                <h3>Friday</h3>
+                <img class="weather-img" src="./assets/some_clouds.png">
+                <h5>some clouds</h5>
+                <div class="temp-cards">
+                    <h6 class="theme-red"><span class="degree">24</span>°</h6>
+                    <h6 class="theme-blue"><span class="degree">16</span>°</h6>
+                </div>
+            </div>
+            <div class="weather">
+                <h3>Saturday</h3>
+                <img class="weather-img" src="./assets/some_sun.png">
+                <h5>some sun</h5>
+                <div class="temp-cards">
+                    <h6 class="theme-red"><span class="degree">26</span>°</h6>
+                    <h6 class="theme-blue"><span class="degree">21</span>°</h6>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container-three" id="cookie-conrainer">
+            <div class="cookie">
+                <img class="img-cookie" src="./assets/cookie.png" alt="cookie">
+            </div>
+            <div class="cookie-pargraphs">
+                <h5 class="cookie-head">Stop! Cookie time</h5>
+                <p class="cookie-p">We use cookies (sadly ot the edible ones) to personalize <br> content and ads, to provide social media features and to <br> analyse our traffic.<a class="theme-blue" href="#">Read more...</a></p>
+            </div>
+            <div class="button-accept">
+                <button onclick="dismiss('#cookie-conrainer')" class="btn">I Accept</button>
+            </div>
+        </div>
+    </div> <!--end of big container-->
+
+    
+
+
+
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
